@@ -29,7 +29,7 @@ p {
     justify-content: center;
     background-color: $base-color;
     font-size: $base-font-size;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         height: 15.2vw;
         background: #252525;
         font-size: 3.2vw;
@@ -57,7 +57,7 @@ p {
     width: 52vw;
     display: flex;
     justify-content: center;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         display: none;
     }
 }
@@ -92,7 +92,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         margin-left: 20vw;
         width: auto;    
     }
@@ -102,7 +102,7 @@ p {
     color: $orange-color;
     text-decoration: underline;
     font-family: $base-font;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         color: #ffffff;
         text-decoration: none;        
     }
@@ -120,7 +120,7 @@ p {
     &:hover {
         transform: scale(1.1, 1.1);
     }
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         display: none;
     }
 }
@@ -138,7 +138,7 @@ p {
     a {
         color: $orange-color;
     }
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         display: none;
     }
 }
@@ -152,9 +152,9 @@ p {
         display: inline-block;
         box-sizing: border-box;
         height: 1.5px;
-        margin-top: 35px;
+        margin-top: 2.3vw;
         border: solid $orange-color;
-        border-width: 0 26px;
+        border-width: 0 1.7vw;
         transform: rotate(90deg);
     }
 }
@@ -165,7 +165,7 @@ p {
     background-image: url(assets/images/top_baner.png);
     background-repeat: no-repeat;
     background-size: cover;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         height: 127vw;
     }
 }
@@ -178,7 +178,7 @@ p {
     flex-direction: column;
     justify-content: center;
     color: #ffffff;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         margin-left: 4.8vw;
         padding-top: 22.7vw;
         width: 78vw;
@@ -189,7 +189,7 @@ p {
 .banner__text__name {
     font-size: 2.7vw;
     font-family: "Yeseva One";
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         font-size: 6vw;
     }
 }
@@ -203,7 +203,7 @@ p {
     margin-top: 1vw;
     font-family: Futurabookc;
     font-size: 1.5vw;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         width: 77vw;
         font-size: 4.9vw;
     }
@@ -227,7 +227,7 @@ p {
         background-color: $orange-color;
         border: 0;
     }
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         margin-top: 8vw;
         width: 90.3vw;
         height: 13.6vw;
@@ -243,7 +243,7 @@ p {
     display: flex;
     justify-content: center;
     background-color: $base-color;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         display: none;
     }
     
@@ -276,7 +276,7 @@ p {
     background-image: url(assets/images/city.png);
     background-repeat: no-repeat;
     background-size: cover;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         height: 398vw;
         background: #252525;
         .container {
@@ -290,14 +290,14 @@ p {
     height: 26vw;
     width: 29vw;
     margin-top: 12vw;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         margin-top: 9.6vw;
         width: 100vw;
     }
 }
 
 .slider__info__name {
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -322,7 +322,7 @@ p {
         border-width: 3vw 1px;
         transform: rotate(90deg);
     }
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         margin-bottom: 6vw;
         width: 36vw;
         font-size: 5.9vw;
@@ -338,7 +338,7 @@ p {
     color: #ffffff;
     font-family: Futurabookc;
     font-size: $vw18px;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         font-size: 3.6vw;
         width: 80vw;
         line-height: 158.48%;
@@ -349,7 +349,7 @@ p {
     height: 13vw;
     display: flex;
     flex-flow: wrap;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         margin-left: 4.7vw;
         margin-top: 80.5vw;
         height: 19.2vw;
@@ -361,7 +361,7 @@ p {
     height: 2vw;
     color: #ffffff;
     font-size: 1vw;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         width: 43vw;
         height: 22.2vw;
         font-size: 3.7vw;
@@ -373,7 +373,7 @@ p {
     color: $orange-color;
     font-family: "Yeseva One";
     font-size: $vw18px;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         margin-bottom: 3vw;
         font-size: 3.7vw;
     }
@@ -382,7 +382,7 @@ p {
 .slider__info__apartments__text {
     width: 8vw;
     font-family: Futurabookc;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         width: 22vw;
     }
 }
@@ -390,13 +390,13 @@ p {
 .slider__apartments {
     margin-top: 6vw;
     margin-left: 3.5vw;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         margin-left: 0;
     }
 }
 
 .slider__apartments__nav {
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         display: none;
     }
 }
@@ -436,7 +436,7 @@ p {
 .slider__apartments__image {
     margin-top: 4vw;
     display: flex;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         justify-content: center;
     }
 }
@@ -447,7 +447,7 @@ p {
     background-repeat: no-repeat;
     background-image: url(assets/images/slider_first.png);
     background-size: cover;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         margin-top: 17.6vw;
         height: 64.3vw;
         width: 100.7vw;
@@ -461,7 +461,7 @@ p {
     background-repeat: no-repeat;
     background-image: url(assets/images/slider_first.png);
     background-size: cover;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         display: none;
     }
 }
@@ -481,7 +481,7 @@ p {
     &:hover {
         transform: scale(1.1, 1.1);
     }
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         right: 4vw;
         top: 232.5vw;
         width: 60px;
@@ -513,7 +513,7 @@ p {
     .main {
         opacity: 1;
     }
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         display: none;
     }
 }
@@ -545,7 +545,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         margin-top: 53vw;
     }
 }
@@ -554,7 +554,7 @@ p {
     font-size: 1.35vw;
     font-family: "Yeseva One";
     color: #ffffff;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         font-size: 5.8vw;
     }
 }
@@ -566,7 +566,7 @@ p {
     background-image: url(assets/images/icon_cam.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         margin-top: 5.4vw;
         height: 8vw;
         width: 30vw;
@@ -580,7 +580,7 @@ p {
     width: 54.5vw;
     height: 29vw;
     border: 0;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         top: 353.5vw;
         left: 5vw;
         width: 90.5vw;
@@ -599,12 +599,12 @@ p {
         margin-right: 6.7vw;
         flex-direction: column;
         justify-content: center;
-        @media (max-width: 376px) {
+        @media (max-width: 400px) {
             margin-left: 4.8vw;
             margin-right: 4.8vw;
         }
     }
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         height: 510vw;
         background: #ffffff;
     }
@@ -617,7 +617,7 @@ p {
     background-image: url(assets/images/line.svg);
     background-position-x: 41.5vw;
     background-repeat: no-repeat;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         margin-top: -124.9vw;
         width: 50vw;
         background-position-x: 35.5vw;
@@ -632,7 +632,7 @@ p {
     text-align: center;
     font-size: 1.5vw;
     line-height: 2.3vw;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         margin-left: 0;
         margin-top: 3vw;
         width: 100%;
@@ -649,7 +649,7 @@ p {
     .repair__submit {
         display: none;
     }
-    @media (max-width: 376px) {   
+    @media (max-width: 400px) {   
         flex-direction: column;
         .repair__submit {
             display: block;
@@ -675,7 +675,7 @@ p {
     &:-ms-placeholder {
         color: #363636;
     }
-    @media (max-width: 376px) {   
+    @media (max-width: 400px) {   
         width: 100%;
         height: 8vw;
         border-color: #ffffff;
@@ -702,7 +702,7 @@ p {
     border-radius: 2px;
     font-family: Futurademic;
     font-size: 1vw;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         margin-top: 28.5vw;
         width: 90.8vw;
         height: 14.1vw;
@@ -738,7 +738,7 @@ button {
     margin-bottom: -0.8vw;
     margin-top: 6.1vw;
     display: flex;
-    @media (max-width: 376px) {  
+    @media (max-width: 400px) {  
         margin-left: 0;
         margin-top: 10.7vw;
     }
@@ -749,7 +749,7 @@ button {
     font-family: Futurabookc;
     font-size: 1vw;
     color: rgba(54, 54, 54, 0.5);
-    @media (max-width: 376px) {  
+    @media (max-width: 400px) {  
         font-size: 4vw;
         color: rgba(255, 255, 255, 0.5);
         &:nth-child(2) {
@@ -762,7 +762,7 @@ button {
     margin-top: 2.3vw;
     display: flex;
     justify-content: center;
-    @media (max-width: 376px) {  
+    @media (max-width: 400px) {  
         position: absolute;
         top: 511vw;    
     }
@@ -800,7 +800,7 @@ button {
         -webkit-transition: 0.2s ease-in;
         transition: 0.2s ease-in;
     }
-    @media (max-width: 376px) {  
+    @media (max-width: 400px) {  
         width: 4.8vw;
         height: 4.8vw;  
     }
@@ -814,7 +814,7 @@ input:required {
     margin-left: 1vw;
     font-family: Futurabookc;
     font-size: 1.07vw;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         color: #FFFFFF;
         font-size: 4.27vw;
     }
@@ -831,11 +831,11 @@ input:required {
         text-align: center;
         font-family: "Yeseva One";
         font-size: 1.35vw; 
-        @media (max-width: 376px) {
+        @media (max-width: 400px) {
             font-size: 5.8vw;
         }
     }
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         margin-top: 15.5vw;
         height: auto;
     }
@@ -849,7 +849,7 @@ input:required {
     background-position-x: center;
     background-repeat: no-repeat;
     background-size: cover;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         margin-top: 5vw;
         height: 7.6vw;
         width: 31.5vw;
@@ -860,14 +860,14 @@ input:required {
 .price {
     margin-left: 2vw;
     margin-top: 2vw;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         margin-top: 10.7vw;
         margin-left: 0;
     }
 }
 
 .price__image {
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         display: flex;
         flex-direction: column;
     }
@@ -879,11 +879,11 @@ input:required {
     &:nth-child(2) {
         margin-right: 2vw;
         margin-left: 2vw;
-        @media (max-width: 376px) {
+        @media (max-width: 400px) {
             margin: 47.4vw 0 47.4vw 0;
         }
     }
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         height: 97.3vw;
         width: 90.6vw;
     }
@@ -893,7 +893,7 @@ input:required {
     position: absolute;
     top: 209vw;
     display: flex;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         top: 651.5vw;
         flex-direction: column;
     }
@@ -908,7 +908,7 @@ input:required {
     &:nth-child(2) {
         margin-left: 10.5vw;
         margin-right: 6.4vw;
-        @media (max-width: 376px) {
+        @media (max-width: 400px) {
             margin: 80.4vw 0 81vw 0;
         }
     }
@@ -920,14 +920,14 @@ input:required {
         font-family: Futurabookc;
         font-size: 1vw;
         color: #959595;
-        @media (max-width: 376px) {
+        @media (max-width: 400px) {
             margin-left: 8.3vw;
             margin-top: 4vw;
             font-size: 3.5vw;
             line-height: 169.8%;
         }
     }
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         margin-left: 0;
         height: 64.3vw;
         width: 72vw;
@@ -939,7 +939,7 @@ input:required {
     margin-top: 1.7vw;
     font-family: "Yeseva One";
     font-size: $vw18px;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         margin-left: 8.3vw;
         margin-top: 5.6vw;
         font-size: 4vw;
@@ -961,26 +961,26 @@ input:required {
     box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
     &:first-child {
         left: 12.7vw;
-        @media (max-width: 376px) {
+        @media (max-width: 400px) {
             top: 710.5vw;
             left: 5vw;
         }
     }
     &:nth-child(2) {
         left: 41.2vw;
-        @media (max-width: 376px) {
+        @media (max-width: 400px) {
             top: 855.5vw;
             left: 5vw;
         }
     }
     &:last-child {
         left: 69.55vw;
-        @media (max-width: 376px) {
+        @media (max-width: 400px) {
             top: 1000.5vw;
             left: 5vw;
         }
     }
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         width: 50.7vw;
         height: 10.7vw;
         font-size: 4vw;
@@ -989,7 +989,7 @@ input:required {
 
 .amenities {
     margin-top: 26vw;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         display: none;
     }
 }
@@ -1122,7 +1122,7 @@ input:required {
     background-image: url(assets/images/house.png);
     background-repeat: no-repeat;
     background-size: cover;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         margin-top: -35.2vw;
         height: auto;
         background: none;
@@ -1133,7 +1133,7 @@ input:required {
 .styles__list {
     margin-top: 9.2vw;
     margin-left: 6.6vw;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         height: 16vw;
         width: 87%;
         text-align: -webkit-center;
@@ -1147,7 +1147,7 @@ input:required {
     font-family: "Yeseva One";
     font-size: 1.8vw;
     color: $orange-color;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         width: 69%;
         font-size: 5.8vw;
         line-height: 138.6%;
@@ -1175,7 +1175,7 @@ input:required {
         }
         
     }
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         display: none;
     }
 }
@@ -1185,7 +1185,7 @@ input:required {
     background-image: url(assets/images/house_mobile.png);
     background-repeat: no-repeat;
     background-size: cover;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         margin-top: 7.2vw;
         margin-left: 4.8vw;
         height: 64.5vw;
@@ -1213,7 +1213,7 @@ input:required {
             height: 24.2vw;
         }
     }
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         display: none;
     }
 }
@@ -1233,7 +1233,7 @@ input:required {
             height: 43.4vw;
         }
     }
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         display: none;
     }
 }
@@ -1244,12 +1244,12 @@ input:required {
         margin-left: 6.7vw;
         margin-right: 6.7vw;
         flex-direction: column;
-        @media (max-width: 376px) {
+        @media (max-width: 400px) {
             margin-left: 4.7vw;
             margin-right: 4.7vw;
         }
     }
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         margin-top: -32.4vw;
         height: 1193vw;
         background: #252525;
@@ -1258,10 +1258,8 @@ input:required {
 
 .design__head {
     margin-top: 10.3vw;
-    text-align: -webkit-center;
-    text-align: -moz-center;
-    text-align: -ms-center;
-    @media (max-width: 376px) {
+    text-align: center;
+    @media (max-width: 400px) {
         margin-top: 46.1vw;
         color: #ffffff;
     }
@@ -1270,32 +1268,32 @@ input:required {
 .design__head__name__text {
     font-family: "Yeseva One";
     font-size: 1.3vw;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         font-size: 5.8vw;
     }
 }
 
 .design__head__name__icon {
-    margin-top: 0.8vw;
-    margin-bottom: 1.5vw;
+    margin: 0.8vw 0 1.5vw 39vw;
     height: 2vw;
     width: 7.6vw;
     background-image: url(assets/images/icon_pencil.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    @media (max-width: 376px) {
-        margin-top: 2.8vw;
-        margin-bottom: 6.2vw;
+    @media (max-width: 400px) {
+        margin: 2.8vw 0 6.2vw 31.6vw;
         height: 7.5vw;
         width: 29.6vw;
     }
 }
 
 .design__head__text {
+    margin-left: 22vw;
     width: 44vw;
     font-family: Futurabookc;
     font-size: 1.3vw;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
+        margin-left: 9vw;
         width: 74vw;
         font-size: 4vw;
         line-height: 135.84%;
@@ -1303,14 +1301,14 @@ input:required {
 }
 
 .design__price {
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         margin-top: 10.4vw;
     }
 }
 
 .design__price__info {
     top: 405.5vw;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         top: 1239.5vw;
     }
 
@@ -1320,22 +1318,23 @@ input:required {
     height: fit-content;
     height: -moz-fit-content;
     height: -ms-fit-content;
+    height: max-content;
     ul {
         margin-bottom: 3.4vw;
     }
     &:nth-child(2) {
-        @media (max-width: 376px) {
+        @media (max-width: 400px) {
             margin: 99.4vw 0 80vw 0;
         }
     }
     &:last-child {
         display: none;
-        @media (max-width: 376px) {
+        @media (max-width: 400px) {
             padding-bottom: 6vw;
             display: block;
         }
     }
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         padding-bottom: 6vw;
         &:nth-child(3) {
             display: none;
@@ -1346,21 +1345,21 @@ input:required {
 .design__price__btns__cost {
     &:first-child {
         top: 417.9vw;
-        @media (max-width: 376px) {
+        @media (max-width: 400px) {
             top: 1280.5vw;
             left: 4.6vw;
         }
     }
     &:nth-child(2) {
         top: 422.8vw;
-        @media (max-width: 376px) {
+        @media (max-width: 400px) {
             top: 1444vw;
             left: 4.6vw;
         }
     }
     &:last-child {
         top: 431.1vw;
-        @media (max-width: 376px) {
+        @media (max-width: 400px) {
             top: 1588vw;
             left: 4.6vw;
         }
@@ -1377,7 +1376,7 @@ input:required {
         margin-top: 11vw;
         margin-left: 8.7vw;
     }
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         display: none;
     }
 }
@@ -1488,7 +1487,7 @@ input:required {
 .team {
     position: absolute;
     top: 485.4vw;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         top: 1618.6vw;
     }
 }
@@ -1497,7 +1496,7 @@ input:required {
     margin: 0 0 0 33vw;
     text-align: center;
     color: #ffffff;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         margin: 0px 0px 0 4vw;
     }
 }
@@ -1507,7 +1506,7 @@ input:required {
     width: 34.4vw;
     font-family: "Yeseva One";
     font-size: 1.34vw;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         width: 92.4vw;
         font-size: 5.8vw;
     }
@@ -1520,7 +1519,7 @@ input:required {
     background-image: url(assets/images/icon_heat.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         margin-top: 3.2vw;
         margin-bottom: 6.4vw;
         margin-left: 31.7vw;
@@ -1535,7 +1534,7 @@ input:required {
     width: 30vw;
     font-family: Futurabookc;
     font-size: 1.34vw;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         margin: 0px 0px 0 4vw;
         width: 86vw;
         font-size: 4vw;
@@ -1549,12 +1548,12 @@ input:required {
         margin-left: 6.7vw;
         margin-right: 6.7vw;
         flex-direction: column;
-        @media (max-width: 376px) {
+        @media (max-width: 400px) {
             margin-left: 4.8vw;
             margin-right: 4.8vw;
         }
     }
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         margin-top: 23.4vw;
     }
 }
@@ -1563,7 +1562,7 @@ input:required {
     width: 84.7vw;
     display: flex;
     justify-content: space-around;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         align-items: flex-end;
         width: 90.3vw;
     }
@@ -1572,7 +1571,7 @@ input:required {
 .team__people__image__slide {
     height: 23.9vw;
     width: 18.2vw;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         height: 110.4vw;
         width: 81vw;
     }
@@ -1582,7 +1581,7 @@ input:required {
     position: absolute;
     top: 11vw;
     left: 9.5vw;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         top: 44.5vw;
         left: 0;
         display: flex;
@@ -1596,11 +1595,11 @@ input:required {
     &:nth-child(2) {
         margin-left: 21vw;
         margin-right: 21.3vw;
-        @media (max-width: 376px) {
+        @media (max-width: 400px) {
             margin: 128vw 0 129vw 0;
         }
     }
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         height: 29.4vw;
         width: 29.4vw;
     }
@@ -1608,7 +1607,7 @@ input:required {
 
 .team__people__info {
     top: 33vw;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         top: 143vw;
         left: 17.7vw;
     }
@@ -1620,13 +1619,13 @@ input:required {
     width: 15.6vw;
     &:nth-child(2) {
         margin: 0 7.8vw 0 13.2vw;
-        @media (max-width: 376px) {
+        @media (max-width: 400px) {
             margin: 117.4vw 0 123vw 5.6vw;
             height: 36.5vw;
             width: 62.1vw;
         }
     }
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         height: 36.5vw;
         width: 62.1vw;
     }
@@ -1637,7 +1636,7 @@ input:required {
     margin-bottom: 0.7vw;
     margin-top: 1.2vw;
     text-align: center;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         margin-top: 7vw;
         margin-bottom: 2.8vw;
         font-size: 5vw;
@@ -1649,7 +1648,7 @@ input:required {
     font-size: $vw18px;
     color: #959595;
     text-align: center;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         font-size: 5vw;
     }
 }
@@ -1661,26 +1660,26 @@ input:required {
     font-size: $base-font-size;
     &:first-child {
         left: 14.3vw;
-        @media (max-width: 376px) {
+        @media (max-width: 400px) {
             top: 171.2vw;
             left: 23.3vw;
         }
     }
     &:nth-child(2) {
         left: 43.1vw;
-        @media (max-width: 376px) {
+        @media (max-width: 400px) {
             top: 329.2vw;
             left: 23.3vw;
         }
     }
     &:last-child {
         left: 72.1vw;
-        @media (max-width: 376px) {
+        @media (max-width: 400px) {
             top: 487vw;
             left: 23.3vw;
         }
     }
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         height: 11.7vw;
         width: 62vw;
         font-size: 3.5vw;
@@ -1695,7 +1694,7 @@ input:required {
     background-image: url(assets/images/icon_line.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         display: none;
     }
 }
@@ -1703,7 +1702,7 @@ input:required {
 .team_info {
     margin: 1.2vw 30vw;
     text-align: center;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         display: none;
     }
 }
@@ -1722,7 +1721,7 @@ input:required {
     .container {
         flex-direction: column;
     }
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         display: none;
     }
 }
@@ -1733,6 +1732,7 @@ input:required {
 }
 
 .clients__head__text {
+    margin-left: 0;
     width: 24vw;
 }
 
@@ -1844,7 +1844,7 @@ input:required {
     background-repeat: no-repeat;
     background-size: cover;
     color: #ffffff;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         top: 2137.5vw;
         margin-left: 0;
         width: 100%;
@@ -1857,7 +1857,7 @@ input:required {
     margin-top: 2.3vw;
     font-family: "Yeseva One";
     font-size: 1.3vw;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         margin-top: 0;
         font-size: 5.4vw;
     }
@@ -1866,7 +1866,7 @@ input:required {
 .question_submit {
     margin-top: 3.1vw;
     margin-left: 3vw;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         margin-top: 14.4vw;
         margin-left: 0;
     }
@@ -1879,7 +1879,7 @@ input:required {
         padding-right: 2.7vw;
         margin-left: -5.5vw;
     }
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         margin-right: 80.9vw;
         font-size: 4vw;
     }
@@ -1888,7 +1888,7 @@ input:required {
 .question_submit__text1 {
     margin-right: 34vw;
     color: rgba(255, 255, 255, 0.5);
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         margin-right: 76vw;
     }
 }
@@ -1898,11 +1898,11 @@ input:required {
     justify-content: start;
     .question_submit {
         display: none;
-        @media (max-width: 376px) {
+        @media (max-width: 400px) {
             display: block;
         }
     }
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         width: 90.4%;
     }
 }
@@ -1910,7 +1910,7 @@ input:required {
 .question__check {
     margin-top: 3.1vw;
     margin-bottom: 3.4vw;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         top: 90.5vw;
         margin-left: -7.7vw;
     }
@@ -1942,7 +1942,7 @@ input:required {
     background-image: url(assets/images/section_geo.png);
     background-repeat: no-repeat;
     background-size: cover;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         width: 100%;
         height: 130.8vw;
         background: #252525;
@@ -1956,7 +1956,7 @@ input:required {
     font-family: "Yeseva One";
     font-size: 1.3vw;
     color: $orange-color;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         margin-top: 87vw;
         width: 85vw;
         font-size: 5vw;
@@ -1966,7 +1966,7 @@ input:required {
 .geo__map {
     margin-bottom: 4.4vw;
     mix-blend-mode: luminosity;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         margin-top: -116.8vw;
     }
 }
@@ -1974,7 +1974,7 @@ input:required {
 .geo__map__iframe {
     height: 31.1vw;
     width: 61.9vw;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         height: 68vw;
         width: 90.7vw;
     }
@@ -1983,7 +1983,7 @@ input:required {
 .geo__icons {
     margin-bottom: 2.9vw;
     margin-top: 1.8vw;
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         margin-left: 6vw;
         margin-top: 6vw;
     }
@@ -1996,7 +1996,7 @@ input:required {
     &:hover {
         transform: scale(1.1, 1.1);
     }
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         margin-right: 6vw;
         height: 10.4vw;
         width: 10.4vw;
@@ -2004,7 +2004,7 @@ input:required {
 }
 
 .footer {
-    @media (max-width: 376px) {
+    @media (max-width: 400px) {
         display: none;
     }
 }
