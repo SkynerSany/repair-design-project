@@ -839,6 +839,7 @@ button:focus {
 }
 
 .mycheckbox__new {
+  display: block;
   position: relative;
   width: 1.2vw;
   height: 1.2vw;
