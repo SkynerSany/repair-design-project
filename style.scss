@@ -10,9 +10,10 @@ a {
 
 p {
     margin: 0;
+    -webkit-user-select: none;
 }
 
-.body {
+body {
     overflow-x: hidden !important;
     margin: 0;
 }
@@ -62,6 +63,10 @@ p {
     }
 }
 
+.main {
+    color: $orange-color;
+}
+
 .header__nav__menu {
     width: 39vw;
     display: flex;
@@ -81,10 +86,7 @@ p {
             }            
         }
     }
-}
-
-.main {
-    color: $orange-color;
+        
 }
 
 .header__contacts {
@@ -250,6 +252,7 @@ p {
 }
 
 .scroll__item {
+    display: block;
     display: flex;
     align-items: center;
     
@@ -727,6 +730,7 @@ input[type=submit] {
 }
 
 button {
+    cursor: pointer;
     &:focus {
         outline: none;
     }
@@ -771,8 +775,8 @@ button {
 .mycheckbox__default {
     display: none;
     &:checked + .mycheckbox__new::after {
-        height: 25px;
-        width: 25px;
+        height: 1.2vw;
+        width: 1.28vw;
         border-radius: 4px;
     }
 }
