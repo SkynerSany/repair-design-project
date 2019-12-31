@@ -4,16 +4,17 @@ $base-font: Futurademic;
 $base-font-size: 0.9vw;
 $vw18px: 1.2vw;
 
-body {
-    overflow-x: hidden !important;
-    margin: 0;
-}
-
 a {
     text-decoration: none;
 }
 
 p {
+    margin: 0;
+    -webkit-user-select: none;
+}
+
+body {
+    overflow-x: hidden !important;
     margin: 0;
 }
 
@@ -29,6 +30,11 @@ p {
     justify-content: center;
     background-color: $base-color;
     font-size: $base-font-size;
+    @media (max-width: 400px) {
+        height: 15.2vw;
+        background: #252525;
+        font-size: 3.2vw;
+    }
 }
 
 .container {
@@ -52,6 +58,13 @@ p {
     width: 52vw;
     display: flex;
     justify-content: center;
+    @media (max-width: 400px) {
+        display: none;
+    }
+}
+
+.main {
+    color: $orange-color;
 }
 
 .header__nav__menu {
@@ -73,10 +86,7 @@ p {
             }            
         }
     }
-}
-
-.main {
-    color: $orange-color;
+        
 }
 
 .header__contacts {
@@ -84,12 +94,20 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 400px) {
+        margin-left: 20vw;
+        width: auto;    
+    }
 }
 
 .header__contacts__telephone {
     color: $orange-color;
     text-decoration: underline;
     font-family: $base-font;
+    @media (max-width: 400px) {
+        color: #ffffff;
+        text-decoration: none;        
+    }
 }
 
 .header__contacts_btn {
@@ -103,6 +121,9 @@ p {
     font-size: $base-font-size;
     &:hover {
         transform: scale(1.1, 1.1);
+    }
+    @media (max-width: 400px) {
+        display: none;
     }
 }
 
@@ -119,6 +140,9 @@ p {
     a {
         color: $orange-color;
     }
+    @media (max-width: 400px) {
+        display: none;
+    }
 }
 
 .aside__text {
@@ -130,9 +154,9 @@ p {
         display: inline-block;
         box-sizing: border-box;
         height: 1.5px;
-        margin-top: 35px;
+        margin-top: 2.3vw;
         border: solid $orange-color;
-        border-width: 0 26px;
+        border-width: 0 1.7vw;
         transform: rotate(90deg);
     }
 }
@@ -143,6 +167,9 @@ p {
     background-image: url(assets/images/top_baner.png);
     background-repeat: no-repeat;
     background-size: cover;
+    @media (max-width: 400px) {
+        height: 127vw;
+    }
 }
 
 .wrapper {
@@ -153,11 +180,20 @@ p {
     flex-direction: column;
     justify-content: center;
     color: #ffffff;
+    @media (max-width: 400px) {
+        margin-left: 4.8vw;
+        padding-top: 22.7vw;
+        width: 78vw;
+        display: block;
+    }
 }
 
 .banner__text__name {
     font-size: 2.7vw;
     font-family: "Yeseva One";
+    @media (max-width: 400px) {
+        font-size: 6vw;
+    }
 }
 
 .city {
@@ -169,6 +205,10 @@ p {
     margin-top: 1vw;
     font-family: Futurabookc;
     font-size: 1.5vw;
+    @media (max-width: 400px) {
+        width: 77vw;
+        font-size: 4.9vw;
+    }
 }
 
 .banner__btns__btn {
@@ -185,6 +225,16 @@ p {
         background-color: $orange-color;
         border: 0;
     }
+    &:first-child {
+        background-color: $orange-color;
+        border: 0;
+    }
+    @media (max-width: 400px) {
+        margin-top: 8vw;
+        width: 90.3vw;
+        height: 13.6vw;
+        font-size: 3.5vw;
+    }
 }
 
 .scroll {
@@ -195,10 +245,14 @@ p {
     display: flex;
     justify-content: center;
     background-color: $base-color;
+    @media (max-width: 400px) {
+        display: none;
+    }
     
 }
 
 .scroll__item {
+    display: block;
     display: flex;
     align-items: center;
     
@@ -225,12 +279,33 @@ p {
     background-image: url(assets/images/city.png);
     background-repeat: no-repeat;
     background-size: cover;
+    @media (max-width: 400px) {
+        height: 398vw;
+        background: #252525;
+        .container {
+            margin-left: 0;
+            flex-direction: column;
+        }
+    }
 }
 
 .slider__info {
     height: 26vw;
     width: 29vw;
     margin-top: 12vw;
+    @media (max-width: 400px) {
+        margin-top: 9.6vw;
+        width: 100vw;
+    }
+}
+
+.slider__info__name {
+    @media (max-width: 400px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    } 
 }
 
 .slider__info__name__project {
@@ -250,6 +325,14 @@ p {
         border-width: 3vw 1px;
         transform: rotate(90deg);
     }
+    @media (max-width: 400px) {
+        margin-bottom: 6vw;
+        width: 36vw;
+        font-size: 5.9vw;
+        &:after {
+            display: none;
+        }
+    }
 }
 
 .slider__info__name__text {
@@ -258,12 +341,22 @@ p {
     color: #ffffff;
     font-family: Futurabookc;
     font-size: $vw18px;
+    @media (max-width: 400px) {
+        font-size: 3.6vw;
+        width: 80vw;
+        line-height: 158.48%;
+    }
 }
 
 .slider__info__apartments__box {
     height: 13vw;
     display: flex;
     flex-flow: wrap;
+    @media (max-width: 400px) {
+        margin-left: 4.7vw;
+        margin-top: 80.5vw;
+        height: 19.2vw;
+    }
 }
 
 .slider__info__apartments {
@@ -271,7 +364,11 @@ p {
     height: 2vw;
     color: #ffffff;
     font-size: 1vw;
-    
+    @media (max-width: 400px) {
+        width: 43vw;
+        height: 22.2vw;
+        font-size: 3.7vw;
+    }
 }
 
 .slider__info__apartments__name {
@@ -279,16 +376,32 @@ p {
     color: $orange-color;
     font-family: "Yeseva One";
     font-size: $vw18px;
+    @media (max-width: 400px) {
+        margin-bottom: 3vw;
+        font-size: 3.7vw;
+    }
 }
 
 .slider__info__apartments__text {
     width: 8vw;
     font-family: Futurabookc;
+    @media (max-width: 400px) {
+        width: 22vw;
+    }
 }
 
 .slider__apartments {
     margin-top: 6vw;
     margin-left: 3.5vw;
+    @media (max-width: 400px) {
+        margin-left: 0;
+    }
+}
+
+.slider__apartments__nav {
+    @media (max-width: 400px) {
+        display: none;
+    }
 }
 
 .slider__apartments__nav__menu {
@@ -326,6 +439,9 @@ p {
 .slider__apartments__image {
     margin-top: 4vw;
     display: flex;
+    @media (max-width: 400px) {
+        justify-content: center;
+    }
 }
 
 .slider__apartments__image__first {
@@ -334,6 +450,12 @@ p {
     background-repeat: no-repeat;
     background-image: url(assets/images/slider_first.png);
     background-size: cover;
+    @media (max-width: 400px) {
+        margin-top: 17.6vw;
+        height: 64.3vw;
+        width: 100.7vw;
+        background-image: url(assets/images/mobile__project.png);
+    }
 }
 
 .slider__apartments__image__second {
@@ -342,7 +464,9 @@ p {
     background-repeat: no-repeat;
     background-image: url(assets/images/slider_first.png);
     background-size: cover;
-
+    @media (max-width: 400px) {
+        display: none;
+    }
 }
 
 .slider__apartments__image__next {
@@ -351,8 +475,24 @@ p {
     top: 79vw;
     width: 6vw;
     height: 6vw;
+    &:last-child {
+        right: 0;
+        left: 9px;
+        display: none;
+        transform: rotate(180deg);
+    }
     &:hover {
         transform: scale(1.1, 1.1);
+    }
+    @media (max-width: 400px) {
+        right: 4vw;
+        top: 232.5vw;
+        width: 60px;
+        height: 60px;
+        &:last-child {
+            left: 4vw;
+            display: block;
+        }
     }
 }
 
@@ -375,6 +515,9 @@ p {
     align-items: center;
     .main {
         opacity: 1;
+    }
+    @media (max-width: 400px) {
+        display: none;
     }
 }
 
@@ -405,12 +548,18 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media (max-width: 400px) {
+        margin-top: 53vw;
+    }
 }
 
 .slider__icon__text {
     font-size: 1.35vw;
     font-family: "Yeseva One";
     color: #ffffff;
+    @media (max-width: 400px) {
+        font-size: 5.8vw;
+    }
 }
 
 .slider__icon__cam {
@@ -420,6 +569,11 @@ p {
     background-image: url(assets/images/icon_cam.svg);
     background-repeat: no-repeat;
     background-size: contain;
+    @media (max-width: 400px) {
+        margin-top: 5.4vw;
+        height: 8vw;
+        width: 30vw;
+    }
 }
 
 .video {
@@ -429,6 +583,12 @@ p {
     width: 54.5vw;
     height: 29vw;
     border: 0;
+    @media (max-width: 400px) {
+        top: 353.5vw;
+        left: 5vw;
+        width: 90.5vw;
+        height: 55vw;
+    }
 }
 
 .repair {
@@ -442,16 +602,29 @@ p {
         margin-right: 6.7vw;
         flex-direction: column;
         justify-content: center;
+        @media (max-width: 400px) {
+            margin-left: 4.8vw;
+            margin-right: 4.8vw;
+        }
+    }
+    @media (max-width: 400px) {
+        height: 510vw;
+        background: #ffffff;
     }
 }
 
 .repair__icon_line {
     margin-top: 18.3vw;
     height: 1vw;
-    width: 100%;
+    width: 45vw;
     background-image: url(assets/images/line.svg);
     background-position-x: 41.5vw;
     background-repeat: no-repeat;
+    @media (max-width: 400px) {
+        margin-top: -124.9vw;
+        width: 50vw;
+        background-position-x: 35.5vw;
+    }
 }
 
 .repair__text {
@@ -462,13 +635,29 @@ p {
     text-align: center;
     font-size: 1.5vw;
     line-height: 2.3vw;
-
+    @media (max-width: 400px) {
+        margin-left: 0;
+        margin-top: 3vw;
+        width: 100%;
+        font-size: 3.9vw;
+        line-height: 169.8%;
+        color: #ffffff;
+    }
 }
 
 .repair__sub {
     width: 100%;
     display: flex;
     justify-content: center;
+    .repair__submit {
+        display: none;
+    }
+    @media (max-width: 400px) {   
+        flex-direction: column;
+        .repair__submit {
+            display: block;
+        }
+    }
 }
 
 .repair__sub__input {
@@ -480,6 +669,31 @@ p {
     border-color: rgba(54, 54, 54, 0.3);
     font-family: Futurabookc;
     font-size: $vw18px;
+    &::-webkit-input-placeholder {
+        color: #363636;
+    }
+    &::-moz-placeholder {
+        color: #363636;
+    }
+    &:-ms-placeholder {
+        color: #363636;
+    }
+    @media (max-width: 400px) {   
+        width: 100%;
+        height: 8vw;
+        border-color: #ffffff;
+        font-size: 4.8vw;
+        color: #ffffff;
+        &::-webkit-input-placeholder {
+            color: #ffffff;
+        }
+        &::-moz-placeholder {
+            color: #ffffff;
+        }
+        &:-ms-placeholder {
+            color: #ffffff;
+        }
+    }
 }
 
 .repair__sub__btn {
@@ -491,6 +705,12 @@ p {
     border-radius: 2px;
     font-family: Futurademic;
     font-size: 1vw;
+    @media (max-width: 400px) {
+        margin-top: 28.5vw;
+        width: 90.8vw;
+        height: 14.1vw;
+        font-size: 4vw;
+    }
 }
 
 input[type=text] {
@@ -510,6 +730,7 @@ input[type=submit] {
 }
 
 button {
+    cursor: pointer;
     &:focus {
         outline: none;
     }
@@ -521,32 +742,48 @@ button {
     margin-bottom: -0.8vw;
     margin-top: 6.1vw;
     display: flex;
+    @media (max-width: 400px) {  
+        margin-left: 0;
+        margin-top: 10.7vw;
+    }
 }
 
 .repair__submit__text {
     margin-right: 16.4vw;
     font-family: Futurabookc;
     font-size: 1vw;
-    color: rgba(54, 54, 54, 0.5)
+    color: rgba(54, 54, 54, 0.5);
+    @media (max-width: 400px) {  
+        font-size: 4vw;
+        color: rgba(255, 255, 255, 0.5);
+        &:nth-child(2) {
+            display: none;
+        }
+    }
 }
 
 .repair__check {
     margin-top: 2.3vw;
     display: flex;
     justify-content: center;
+    @media (max-width: 400px) {  
+        position: absolute;
+        top: 511vw;    
+    }
 }
 
 .mycheckbox__default {
     display: none;
     &:checked + .mycheckbox__new::after {
-        height: 25px;
-        width: 25px;
+        height: 1.2vw;
+        width: 1.28vw;
         border-radius: 4px;
     }
 }
 
 .mycheckbox__new {
     position: relative;
+    display: block;
     width: 1.2vw;
     height: 1.2vw;
     background-color: $orange-color;
@@ -568,6 +805,10 @@ button {
         -webkit-transition: 0.2s ease-in;
         transition: 0.2s ease-in;
     }
+    @media (max-width: 400px) {  
+        width: 4.8vw;
+        height: 4.8vw;  
+    }
 }
 
 input:required {
@@ -578,6 +819,10 @@ input:required {
     margin-left: 1vw;
     font-family: Futurabookc;
     font-size: 1.07vw;
+    @media (max-width: 400px) {
+        color: #FFFFFF;
+        font-size: 4.27vw;
+    }
 }
 
 .repair__types {
@@ -591,21 +836,46 @@ input:required {
         text-align: center;
         font-family: "Yeseva One";
         font-size: 1.35vw; 
+        @media (max-width: 400px) {
+            font-size: 5.8vw;
+        }
+    }
+    @media (max-width: 400px) {
+        margin-top: 15.5vw;
+        height: auto;
     }
 }
 
 .repair__types__icon {
+    margin-top: 1vw;
     height: 2vw;
     width: 8vw;
     background-image: url(assets/images/icon_types.svg);
     background-position-x: center;
     background-repeat: no-repeat;
     background-size: cover;
+    @media (max-width: 400px) {
+        margin-top: 5vw;
+        height: 7.6vw;
+        width: 31.5vw;
+        background-size: contain;
+    }
 }
 
 .price {
     margin-left: 2vw;
     margin-top: 2vw;
+    @media (max-width: 400px) {
+        margin-top: 10.7vw;
+        margin-left: 0;
+    }
+}
+
+.price__image {
+    @media (max-width: 400px) {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .price__image__slide {
@@ -614,6 +884,13 @@ input:required {
     &:nth-child(2) {
         margin-right: 2vw;
         margin-left: 2vw;
+        @media (max-width: 400px) {
+            margin: 47.4vw 0 47.4vw 0;
+        }
+    }
+    @media (max-width: 400px) {
+        height: 97.3vw;
+        width: 90.6vw;
     }
 }
 
@@ -621,6 +898,10 @@ input:required {
     position: absolute;
     top: 209vw;
     display: flex;
+    @media (max-width: 400px) {
+        top: 651.5vw;
+        flex-direction: column;
+    }
 }
 
 .price__info__text {
@@ -632,6 +913,9 @@ input:required {
     &:nth-child(2) {
         margin-left: 10.5vw;
         margin-right: 6.4vw;
+        @media (max-width: 400px) {
+            margin: 80.4vw 0 81vw 0;
+        }
     }
     ul {
         padding-left: 2.7vw;
@@ -641,6 +925,17 @@ input:required {
         font-family: Futurabookc;
         font-size: 1vw;
         color: #959595;
+        @media (max-width: 400px) {
+            margin-left: 8.3vw;
+            margin-top: 4vw;
+            font-size: 3.5vw;
+            line-height: 169.8%;
+        }
+    }
+    @media (max-width: 400px) {
+        margin-left: 0;
+        height: 64.3vw;
+        width: 72vw;
     }
 }
 
@@ -649,6 +944,11 @@ input:required {
     margin-top: 1.7vw;
     font-family: "Yeseva One";
     font-size: $vw18px;
+    @media (max-width: 400px) {
+        margin-left: 8.3vw;
+        margin-top: 5.6vw;
+        font-size: 4vw;
+    }
 }
 
 .price__btns__cost {
@@ -666,18 +966,37 @@ input:required {
     box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
     &:first-child {
         left: 12.7vw;
+        @media (max-width: 400px) {
+            top: 710.5vw;
+            left: 5vw;
+        }
     }
     &:nth-child(2) {
         left: 41.2vw;
+        @media (max-width: 400px) {
+            top: 855.5vw;
+            left: 5vw;
+        }
     }
     &:last-child {
         left: 69.55vw;
+        @media (max-width: 400px) {
+            top: 1000.5vw;
+            left: 5vw;
+        }
     }
-    
+    @media (max-width: 400px) {
+        width: 50.7vw;
+        height: 10.7vw;
+        font-size: 4vw;
+    }
 }
 
 .amenities {
-    margin-top: 26vw
+    margin-top: 26vw;
+    @media (max-width: 400px) {
+        display: none;
+    }
 }
 
 .amenities__info {
@@ -752,6 +1071,16 @@ input:required {
     color: #ffffff;
     font-family: Futurademic;
     font-size: $vw18px;
+    &::-webkit-input-placeholder {
+        color: #ffffff;
+    }
+    &::-moz-placeholder {
+        color: #ffffff;
+    }
+    &:-ms-placeholder {
+        color: #ffffff;
+    }
+    
 }
 
 .amenities__info__form__check {
@@ -798,11 +1127,24 @@ input:required {
     background-image: url(assets/images/house.png);
     background-repeat: no-repeat;
     background-size: cover;
+    @media (max-width: 400px) {
+        margin-top: -35.2vw;
+        height: auto;
+        background: none;
+        flex-direction: column;
+    }
 }
 
 .styles__list {
     margin-top: 9.2vw;
     margin-left: 6.6vw;
+    @media (max-width: 400px) {
+        height: 16vw;
+        width: 87%;
+        text-align: -webkit-center;
+        text-align: -moz-center;
+        text-align: -ms-center;
+    }
 }
 
 .styles__list__name {
@@ -810,6 +1152,12 @@ input:required {
     font-family: "Yeseva One";
     font-size: 1.8vw;
     color: $orange-color;
+    @media (max-width: 400px) {
+        width: 69%;
+        font-size: 5.8vw;
+        line-height: 138.6%;
+        text-align: center;
+    }
 }
 
 .styles__list__text {
@@ -832,6 +1180,27 @@ input:required {
         }
         
     }
+    @media (max-width: 400px) {
+        display: none;
+    }
+}
+
+.styles__images_mobile {
+    display: none;
+    background-image: url(assets/images/house_mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (max-width: 400px) {
+        margin-top: 7.2vw;
+        margin-left: 4.8vw;
+        height: 64.5vw;
+        width: 90.6vw;
+        display: block;
+    }
+}
+
+.styles__images_mobile__next {
+    top: 1072vw;
 }
 
 .styles__images_first {
@@ -848,6 +1217,9 @@ input:required {
             width: 24.5vw;
             height: 24.2vw;
         }
+    }
+    @media (max-width: 400px) {
+        display: none;
     }
 }
 
@@ -866,6 +1238,9 @@ input:required {
             height: 43.4vw;
         }
     }
+    @media (max-width: 400px) {
+        display: none;
+    }
 }
 
 .design {
@@ -874,55 +1249,125 @@ input:required {
         margin-left: 6.7vw;
         margin-right: 6.7vw;
         flex-direction: column;
+        @media (max-width: 400px) {
+            margin-left: 4.7vw;
+            margin-right: 4.7vw;
+        }
+    }
+    @media (max-width: 400px) {
+        margin-top: -32.4vw;
+        height: 1193vw;
+        background: #252525;
     }
 }
 
 .design__head {
     margin-top: 10.3vw;
-    text-align: -webkit-center;
+    text-align: center;
+    @media (max-width: 400px) {
+        margin-top: 46.1vw;
+        color: #ffffff;
+    }
 }
 
 .design__head__name__text {
     font-family: "Yeseva One";
     font-size: 1.3vw;
+    @media (max-width: 400px) {
+        font-size: 5.8vw;
+    }
 }
 
 .design__head__name__icon {
-    margin-top: 0.8vw;
-    margin-bottom: 1.5vw;
+    margin: 0.8vw 0 1.5vw 39vw;
     height: 2vw;
     width: 7.6vw;
     background-image: url(assets/images/icon_pencil.svg);
     background-repeat: no-repeat;
     background-size: contain;
+    @media (max-width: 400px) {
+        margin: 2.8vw 0 6.2vw 31.6vw;
+        height: 7.5vw;
+        width: 29.6vw;
+    }
 }
 
 .design__head__text {
+    margin-left: 22vw;
     width: 44vw;
     font-family: Futurabookc;
     font-size: 1.3vw;
+    @media (max-width: 400px) {
+        margin-left: 9vw;
+        width: 74vw;
+        font-size: 4vw;
+        line-height: 135.84%;
+    }
+}
+
+.design__price {
+    @media (max-width: 400px) {
+        margin-top: 10.4vw;
+    }
 }
 
 .design__price__info {
     top: 405.5vw;
+    @media (max-width: 400px) {
+        top: 1239.5vw;
+    }
+
 }
 
 .design__price__info__text {
     height: fit-content;
+    height: -moz-fit-content;
+    height: -ms-fit-content;
+    height: max-content;
     ul {
         margin-bottom: 3.4vw;
+    }
+    &:nth-child(2) {
+        @media (max-width: 400px) {
+            margin: 99.4vw 0 80vw 0;
+        }
+    }
+    &:last-child {
+        display: none;
+        @media (max-width: 400px) {
+            padding-bottom: 6vw;
+            display: block;
+        }
+    }
+    @media (max-width: 400px) {
+        padding-bottom: 6vw;
+        &:nth-child(3) {
+            display: none;
+        }
     }
 }
 
 .design__price__btns__cost {
     &:first-child {
         top: 417.9vw;
+        @media (max-width: 400px) {
+            top: 1280.5vw;
+            left: 4.6vw;
+        }
     }
     &:nth-child(2) {
         top: 422.8vw;
+        @media (max-width: 400px) {
+            top: 1444vw;
+            left: 4.6vw;
+        }
     }
     &:last-child {
         top: 431.1vw;
+        @media (max-width: 400px) {
+            top: 1588vw;
+            left: 4.6vw;
+        }
     }
 }
 
@@ -935,6 +1380,9 @@ input:required {
     .container {
         margin-top: 11vw;
         margin-left: 8.7vw;
+    }
+    @media (max-width: 400px) {
+        display: none;
     }
 }
 
@@ -961,7 +1409,7 @@ input:required {
         content: "";
         margin-left: 8vw;
         position: absolute;
-        top: 435.4vw;
+        top: 436.2vw;
         display: inline-block;
         box-sizing: border-box;
         border: solid $orange-color;
@@ -1005,7 +1453,7 @@ input:required {
 }
 
 .working__pages__steps__stage {
-    margin-left: 12.7vw;
+    margin-left: 13.7vw;
     margin-top: 2.4vw;
     width: 8vw;
     font-size: 1vw;
@@ -1033,8 +1481,8 @@ input:required {
 
 .working__pages__image {
     margin-top: 3vw;
-    margin-left: 12.8vw;
-    width: 47.8vw;
+    margin-left: 13.3vw;
+    width: 50.8vw;
     height: 25vw;
     background-image: url(assets/images/stages.png);
     background-repeat: no-repeat;
@@ -1044,30 +1492,59 @@ input:required {
 .team {
     position: absolute;
     top: 485.4vw;
+    @media (max-width: 400px) {
+        top: 1618.6vw;
+    }
 }
 
 .team__head {
+    margin: 0 0 0 33vw;
+    text-align: center;
     color: #ffffff;
-    text-align: -webkit-center;
+    @media (max-width: 400px) {
+        margin: 0px 0px 0 4vw;
+    }
 }
 
 .team__head__name {
     margin-bottom: 0.8vw;
+    width: 34.4vw;
     font-family: "Yeseva One";
     font-size: 1.34vw;
+    @media (max-width: 400px) {
+        width: 92.4vw;
+        font-size: 5.8vw;
+    }
 }
+
 .team__head__icon {
+    margin-left: 13.4vw;
     height: 2vw;
     width: 7.6vw;
     background-image: url(assets/images/icon_heat.svg);
     background-repeat: no-repeat;
     background-size: contain;
+    @media (max-width: 400px) {
+        margin-top: 3.2vw;
+        margin-bottom: 6.4vw;
+        margin-left: 31.7vw;
+        height: 7.5vw;
+        width: 29.6vw;
+    }
 }
+
 .team__head__text {
+    margin-left: 3vw;
     margin-top: 1.6vw;
     width: 30vw;
     font-family: Futurabookc;
     font-size: 1.34vw;
+    @media (max-width: 400px) {
+        margin: 0px 0px 0 4vw;
+        width: 86vw;
+        font-size: 4vw;
+        line-height: 135.84%;
+    }
 }
 
 .team__people {
@@ -1076,6 +1553,13 @@ input:required {
         margin-left: 6.7vw;
         margin-right: 6.7vw;
         flex-direction: column;
+        @media (max-width: 400px) {
+            margin-left: 4.8vw;
+            margin-right: 4.8vw;
+        }
+    }
+    @media (max-width: 400px) {
+        margin-top: 23.4vw;
     }
 }
 
@@ -1083,17 +1567,31 @@ input:required {
     width: 84.7vw;
     display: flex;
     justify-content: space-around;
+    @media (max-width: 400px) {
+        align-items: flex-end;
+        width: 90.3vw;
+    }
 }
 
 .team__people__image__slide {
     height: 23.9vw;
     width: 18.2vw;
+    @media (max-width: 400px) {
+        height: 110.4vw;
+        width: 81vw;
+    }
 }
 
 .team__people__icons {
     position: absolute;
     top: 11vw;
     left: 9.5vw;
+    @media (max-width: 400px) {
+        top: 44.5vw;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .team__people__icons__image {
@@ -1102,11 +1600,22 @@ input:required {
     &:nth-child(2) {
         margin-left: 21vw;
         margin-right: 21.3vw;
+        @media (max-width: 400px) {
+            margin: 128vw 0 129vw 0;
+        }
+    }
+    @media (max-width: 400px) {
+        height: 29.4vw;
+        width: 29.4vw;
     }
 }
 
 .team__people__info {
     top: 33vw;
+    @media (max-width: 400px) {
+        top: 143vw;
+        left: 17.7vw;
+    }
 }
 
 .team__people__info__text {
@@ -1114,8 +1623,16 @@ input:required {
     height: 9.2vw;
     width: 15.6vw;
     &:nth-child(2) {
-        margin-left: 13.2vw;
-        margin-right: 7.8vw;
+        margin: 0 7.8vw 0 13.2vw;
+        @media (max-width: 400px) {
+            margin: 117.4vw 0 123vw 5.6vw;
+            height: 36.5vw;
+            width: 62.1vw;
+        }
+    }
+    @media (max-width: 400px) {
+        height: 36.5vw;
+        width: 62.1vw;
     }
 }
 
@@ -1124,6 +1641,11 @@ input:required {
     margin-bottom: 0.7vw;
     margin-top: 1.2vw;
     text-align: center;
+    @media (max-width: 400px) {
+        margin-top: 7vw;
+        margin-bottom: 2.8vw;
+        font-size: 5vw;
+    }
 }
 
 .team__people__info__text__speciality {
@@ -1131,6 +1653,9 @@ input:required {
     font-size: $vw18px;
     color: #959595;
     text-align: center;
+    @media (max-width: 400px) {
+        font-size: 5vw;
+    }
 }
 
 .team__people__btns__stage {
@@ -1140,12 +1665,29 @@ input:required {
     font-size: $base-font-size;
     &:first-child {
         left: 14.3vw;
+        @media (max-width: 400px) {
+            top: 171.2vw;
+            left: 23.3vw;
+        }
     }
     &:nth-child(2) {
         left: 43.1vw;
+        @media (max-width: 400px) {
+            top: 329.2vw;
+            left: 23.3vw;
+        }
     }
     &:last-child {
         left: 72.1vw;
+        @media (max-width: 400px) {
+            top: 487vw;
+            left: 23.3vw;
+        }
+    }
+    @media (max-width: 400px) {
+        height: 11.7vw;
+        width: 62vw;
+        font-size: 3.5vw;
     }
 }
 
@@ -1157,23 +1699,23 @@ input:required {
     background-image: url(assets/images/icon_line.svg);
     background-repeat: no-repeat;
     background-size: contain;
+    @media (max-width: 400px) {
+        display: none;
+    }
 }
 
 .team_info {
-    text-align: -webkit-center;
-    margin-top: 1.2vw;
+    margin: 1.2vw 30vw;
+    text-align: center;
+    @media (max-width: 400px) {
+        display: none;
+    }
 }
 
 .team__info__text {
-    width: 29vw;
+    width: 40vw;
     font-family: Futurabookc;
     font-size: 1.34vw;
-    &:first-child {
-        width: 34vw;
-    }
-    &:last-child {
-        width: 40vw;
-    }
 }
 
 .clients {
@@ -1184,18 +1726,27 @@ input:required {
     .container {
         flex-direction: column;
     }
+    @media (max-width: 400px) {
+        display: none;
+    }
 }
 
 .clients__head {
-    margin-top: 31.3vw;
-    margin-right: 6.5%;
+    margin: 31.3vw 0 0 32vw;
+    text-align: center;
 }
 
 .clients__head__text {
+    margin-left: 0;
+    width: 24vw;
+}
+
+.clients__head__name__text {
     width: 24vw;
 }
 
 .clients__head__name__icon {
+    margin-left: 8.4vw;
     background-image: url(assets/images/icon_hands.svg);
 }
 
@@ -1298,49 +1849,94 @@ input:required {
     background-repeat: no-repeat;
     background-size: cover;
     color: #ffffff;
-}
-
-.question__name {
-    font-family: "Yeseva One";
-    font-size: 1.3vw;
+    @media (max-width: 400px) {
+        top: 2137.5vw;
+        margin-left: 0;
+        width: 100%;
+        height: 130.8vw;
+        background: #252525;
+    }
 }
 
 .question__name {
     margin-top: 2.3vw;
+    font-family: "Yeseva One";
+    font-size: 1.3vw;
+    @media (max-width: 400px) {
+        margin-top: 0;
+        font-size: 5.4vw;
+    }
 }
 
 .question_submit {
     margin-top: 3.1vw;
     margin-left: 3vw;
+    @media (max-width: 400px) {
+        margin-top: 14.4vw;
+        margin-left: 0;
+    }
 }
 
 .question_submit__text {
     margin-right: 17.9vw;
     color: rgba(255, 255, 255, 0.5);
     &:nth-child(2) {
-        margin-left: -3vw;
+        padding-right: 2.7vw;
+        margin-left: -5.5vw;
+    }
+    @media (max-width: 400px) {
+        margin-right: 80.9vw;
+        font-size: 4vw;
     }
 }
 
 .question_submit__text1 {
     margin-right: 34vw;
     color: rgba(255, 255, 255, 0.5);
+    @media (max-width: 400px) {
+        margin-right: 76vw;
+    }
 }
 
 .question__sub {
     width: 34.8vw;
     justify-content: start;
+    .question_submit {
+        display: none;
+        @media (max-width: 400px) {
+            display: block;
+        }
+    }
+    @media (max-width: 400px) {
+        width: 90.4%;
+    }
 }
 
 .question__check {
     margin-top: 3.1vw;
     margin-bottom: 3.4vw;
+    @media (max-width: 400px) {
+        top: 90.5vw;
+        margin-left: -7.7vw;
+    }
 }
 
 .question__sub__input {
     color: #ffffff;
     &:last-child {
         width: 100%;
+    }
+    &::placeholder {
+        color: #ffffff;
+    }
+    &::-webkit-input-placeholder {
+        color: #ffffff;
+    }
+    &::-moz-placeholder {
+        color: #ffffff;
+    }
+    &:-ms-placeholder {
+        color: #ffffff;
     }
 }
 
@@ -1351,30 +1947,51 @@ input:required {
     background-image: url(assets/images/section_geo.png);
     background-repeat: no-repeat;
     background-size: cover;
+    @media (max-width: 400px) {
+        width: 100%;
+        height: 130.8vw;
+        background: #252525;
+    }
 }
 
 .geo__name {
-    margin-top: 14.5vw;
+    margin-top: 16.5vw;
     width: 36vw;
     text-align: center;
     font-family: "Yeseva One";
     font-size: 1.3vw;
     color: $orange-color;
+    @media (max-width: 400px) {
+        margin-top: 87vw;
+        width: 85vw;
+        font-size: 5vw;
+    }
 }
 
 .geo__map {
     margin-bottom: 4.4vw;
     mix-blend-mode: luminosity;
+    @media (max-width: 400px) {
+        margin-top: -116.8vw;
+    }
 }
 
 .geo__map__iframe {
     height: 31.1vw;
     width: 61.9vw;
+    @media (max-width: 400px) {
+        height: 68vw;
+        width: 90.7vw;
+    }
 }
 
 .geo__icons {
     margin-bottom: 2.9vw;
     margin-top: 1.8vw;
+    @media (max-width: 400px) {
+        margin-left: 6vw;
+        margin-top: 6vw;
+    }
 }
 
 .geo__icons__img {
@@ -1384,9 +2001,18 @@ input:required {
     &:hover {
         transform: scale(1.1, 1.1);
     }
+    @media (max-width: 400px) {
+        margin-right: 6vw;
+        height: 10.4vw;
+        width: 10.4vw;
+    }
 }
 
-
+.footer {
+    @media (max-width: 400px) {
+        display: none;
+    }
+}
 
 
 @font-face {
